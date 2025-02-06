@@ -10,6 +10,7 @@ gui:
     commandLogSize: 14
     showRandomTip: false
     expandFocusedSidePanel: true
+    showFileTree: false
 
     theme:
         optionsTextColor:
