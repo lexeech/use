@@ -1,0 +1,40 @@
+git:
+    paging:
+        colorArg: always
+        pager: diff-so-fancy
+confirmOnQuit: true
+gui:
+    mouseEvents: false
+    statusPanelView: 'allBranchesLog'
+    showPanelJumps: false
+    commandLogSize: 14
+    showRandomTip: false
+    expandFocusedSidePanel: true
+
+    theme:
+        optionsTextColor:
+          - '#858585'
+
+os:
+    open: 'code-insiders {{filename}}'
+    edit: 'code-insiders {{filename}}'
+    editAtLine: 'code-insiders --line={{line}} {{filename}}'
+    editAtLineAndWait: 'code-insiders --block --line={{line}} {{filename}}'
+    editInTerminal: false
+    openDirInEditor: 'code-insiders {{dir}}'
+
+keybinding:
+  universal:
+    quitWithoutChangingDirectory: ''
+    prevBlock-alt: ''
+    nextBlock-alt: ''
+    scrollUpMain-alt1: ''
+    scrollDownMain-alt1: ''
+    scrollUpMain-alt2: ''
+    scrollDownMain-alt2: ''
+  submodules:
+    init: ''
+    update: ''
+    bulkMenu: ''
+  worktrees:
+    viewWorktreeOptions: ''
