@@ -1,0 +1,72 @@
+{
+    "project_panel": {
+      "dock": "left"
+    },
+    "features": {
+      "copilot": false,
+      "inline_completion_provider": "none"
+    },
+    "theme": "Ayu Dark",
+    "telemetry": {
+      "diagnostics": false,
+      "metrics": false
+    },
+    "vim_mode": false,
+    "ui_font_size": 15,
+    "tab_bar": {
+      "show_nav_history_buttons": false
+    },
+    "buffer_font_size": 14,
+    "preferred_line_length": 80,
+    "buffer_line_height": "comfortable",
+    "buffer_font_family": "Pragmata Pro",
+    "toolbar": {
+      "breadcrumbs": false,
+      "quick_actions": false,
+      "selections_menu": false
+    },
+    "tabs": {
+      "show_diagnostics": "errors",
+      "close_position": "right",
+      "file_icons": false,
+      "git_status": true,
+      "activate_on_close": null,
+      "always_show_close_button": false
+    },
+    "collaboration_panel": {
+      "enabled": false,
+      "button": false
+    },
+    "outline_panel": {
+      "enabled": false,
+      "button": false
+    },
+    "terminal": {
+      "enabled": false,
+      "button": false
+    },
+    "assistant": {
+      "version": "1",
+      "enabled": false,
+      "button": false
+    },
+    "notification_panel": {
+      "enabled": false,
+      "button": false
+    },
+    "confirm_quit": true,
+    "remove_trailing_whitespace_on_save": true,
+    "when_closing_with_no_tabs": "keep_window_open",
+    "gutter": {
+      "runnables": false,
+      "code_actions": false
+    },
+    "soft_wrap": "editor_width",
+    "wrap_guides": [120, 130],
+    "git": {
+      "inline_blame": {
+        "enabled": false
+      }
+    }
+  }
+  
