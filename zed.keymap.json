@@ -1,0 +1,13 @@
+[
+    {
+      "context": "Workspace",
+      "bindings": {}
+    },
+    {
+      "context": "Editor",
+      "bindings": {
+        "cmd-g": "editor::ToggleGitBlameInline"
+      }
+    }
+  ]
+  
