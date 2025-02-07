@@ -62,9 +62,13 @@ keybinding:
     bulkMenu: ''
   worktrees:
     viewWorktreeOptions: ''
+  files:
+    commitChangesWithEditor: ''
+  branches:
+    mergeIntoCurrentBranch: ''
 
 customCommands:
-  - key: "W"
+  - key: "C"
     prompts:
       - type: "input"
         title: "Commit with `--no-verify`` flag"
