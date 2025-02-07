@@ -4,6 +4,7 @@ git:
         pager: diff-so-fancy
 confirmOnQuit: true
 gui:
+    wrapLinesInStagingView: true
     mouseEvents: false
     statusPanelView: 'allBranchesLog'
     showPanelJumps: false
@@ -45,6 +46,8 @@ os:
     openDirInEditor: 'code-insiders {{dir}}'
 
 keybinding:
+  status:
+    recentRepos: ''
   universal:
     quitWithoutChangingDirectory: ''
     prevBlock-alt: ''
