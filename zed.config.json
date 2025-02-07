@@ -1,6 +1,9 @@
 {
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
+    "file_icons": false,
+    "entry_spacing": "comfortable",
+    "button": false
   },
   "features": {
     "copilot": false,
