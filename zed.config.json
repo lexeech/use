@@ -6,7 +6,7 @@
     "copilot": false,
     "inline_completion_provider": "none"
   },
-  "theme": "Ayu Dark",
+  "theme": "Fleet Dark", // from Fleet Themes
   "telemetry": {
     "diagnostics": false,
     "metrics": false
