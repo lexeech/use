@@ -64,6 +64,7 @@ keybinding:
     viewWorktreeOptions: ''
   files:
     commitChangesWithEditor: ''
+    openMergeTool: ''
   branches:
     mergeIntoCurrentBranch: ''
 
