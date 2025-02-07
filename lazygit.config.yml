@@ -13,8 +13,25 @@ gui:
     showFileTree: false
 
     theme:
-        optionsTextColor:
-          - '#858585'
+      activeBorderColor:
+        - '#268BD2' # Soft blue accent (similar to Helix/Zed's cursor highlight)
+        - bold
+      inactiveBorderColor:
+        - '#858585' # Dark gray for inactive elements
+      optionsTextColor:
+        - '#858585' # Muted blue (used in Zed for text accents)
+      selectedLineBgColor:
+        - '#525257' # Very dark gray for selected line background
+      cherryPickedCommitBgColor:
+        - '#2C2C2C' # Slightly lighter dark gray for cherry-picked commits
+      cherryPickedCommitFgColor:
+        - '#A8CC7C' # Soft lime green for foreground, consistent with highlights
+      unstagedChangesColor:
+        - '#E394DC' # Pink for unstaged changes, keeping subtle vibrance
+      defaultFgColor:
+        - '#D1D1D1' # Light gray for default text color
+      searchingActiveBorderColor:
+        - '#F8AB17' # Yellow for search highlights (contrasting active borders)
 
 os:
     open: 'code-insiders {{filename}}'
