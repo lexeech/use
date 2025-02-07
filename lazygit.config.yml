@@ -59,3 +59,21 @@ keybinding:
     bulkMenu: ''
   worktrees:
     viewWorktreeOptions: ''
+
+customCommands:
+  - key: "W"
+    prompts:
+      - type: "input"
+        title: "Commit with `--no-verify`` flag"
+        initialValue: ""
+    command: git commit -m "{{index .PromptResponses 0}}" --no-verify
+    context: "files"
+    subprocess: true
+  - key: "M"
+    context: "localBranches"
+    prompts:
+      - type: "input"
+        title: "Merge branch into current branch"
+        initialValue: ""
+    command: git merge origin/{{index .PromptResponses 0}}
+    subprocess: true
