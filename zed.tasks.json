@@ -1,0 +1,7 @@
+[
+    {
+      "label": "start lazygit",
+      "command": "lazygit -p $ZED_WORKTREE_ROOT"
+    }
+  ]
+  

@@ -1,13 +1,17 @@
 [
-    {
-      "context": "Workspace",
-      "bindings": {}
-    },
-    {
-      "context": "Editor",
-      "bindings": {
-        "cmd-g": "editor::ToggleGitBlameInline"
-      }
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-g": [
+        "task::Spawn",
+        { "task_name": "start lazygit", "reveal_target": "center" }
+      ]
     }
-  ]
-  
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-g": "editor::ToggleGitBlameInline"
+    }
+  }
+]
