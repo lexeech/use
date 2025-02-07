@@ -14,14 +14,14 @@ gui:
 
     theme:
       activeBorderColor:
-        - '#268BD2' # Soft blue accent (similar to Helix/Zed's cursor highlight)
+        - '#268BD2' # Soft blue accent
         - bold
       inactiveBorderColor:
         - '#858585' # Dark gray for inactive elements
       optionsTextColor:
-        - '#858585' # Muted blue (used in Zed for text accents)
+        - '#858585' # Muted blue
       selectedLineBgColor:
-        - '#525257' # Very dark gray for selected line background
+        - '#1d2846' # Very dark blue for selected line background
       cherryPickedCommitBgColor:
         - '#2C2C2C' # Slightly lighter dark gray for cherry-picked commits
       cherryPickedCommitFgColor:
@@ -32,6 +32,9 @@ gui:
         - '#D1D1D1' # Light gray for default text color
       searchingActiveBorderColor:
         - '#F8AB17' # Yellow for search highlights (contrasting active borders)
+
+    authorColors:
+      '*': '#878EC0' # Muted lavender for author names, consistent with soft themes
 
 os:
     open: 'code-insiders {{filename}}'
