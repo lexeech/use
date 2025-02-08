@@ -164,9 +164,7 @@
     "use_key_equivalents": true,
     "bindings": {
       "cmd-w": "pane::CloseActiveItem",
-      "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }],
-      "cmd-f": "project_search::ToggleFocus",
-      "cmd-g": "search::SelectNextMatch"
+      "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }]
     }
   },
   // Bindings from VS Code
@@ -348,7 +346,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-g": [
+      "cmd-<": [
         "task::Spawn",
         { "task_name": "start lazygit", "reveal_target": "center" }
       ]
@@ -357,7 +355,7 @@
   {
     "context": "Editor",
     "bindings": {
-      "cmd-g": "editor::ToggleGitBlameInline"
+      "cmd-,": "editor::ToggleGitBlameInline"
     }
   }
 ]
