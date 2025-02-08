@@ -1,5 +1,4 @@
 [
-  // Standard macOS bindings
   {
     "use_key_equivalents": true,
     "bindings": {
@@ -50,7 +49,8 @@
       // "cmd-shift-up": "editor::SelectToBeginning",
       // "cmd-shift-down": "editor::SelectToEnd",
       "cmd-a": "editor::SelectAll",
-      "cmd-shift-o": "editor::Format",
+      "cmd-shift-k": "editor::Format",
+      "cmd-shift-l": "editor::FormatSelections",
       "cmd-shift-left": [
         "editor::SelectToBeginningOfLine",
         { "stop_at_soft_wraps": true }
@@ -287,7 +287,8 @@
     "bindings": {
       "alt-enter": "editor::OpenExcerpts",
       "shift-enter": "editor::ExpandExcerpts",
-      "cmd-shift-e": "pane::RevealInProjectPanel"
+      "cmd-shift-e": "pane::RevealInProjectPanel",
+      "cmd-e": "outline_panel::UnfoldDirectory"
     }
   },
   {
