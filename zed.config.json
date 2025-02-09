@@ -1,7 +1,14 @@
 {
+  "base_keymap": "None",
+  "preview_tabs": {
+    "enabled": false
+  },
   "project_panel": {
+    "default_width": 480,
     "dock": "left",
     "file_icons": false,
+    "folder_icons": false,
+    "indent_size": 10,
     "entry_spacing": "comfortable",
     "button": false
   },
@@ -19,7 +26,7 @@
   "tab_bar": {
     "show_nav_history_buttons": false
   },
-  "buffer_font_size": 14,
+  "buffer_font_size": 14.0,
   "preferred_line_length": 80,
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Pragmata Pro",
@@ -70,5 +77,17 @@
     "inline_blame": {
       "enabled": false
     }
+  },
+  "experimental.theme_overrides": {
+    "editor.background": "#1d1f20",
+    "panel.background": "#252526",
+    "tab.active_background": "#1d1f20",
+    "tab.inactive_background": "#2d2d2d",
+    "title_bar.background": "#333333",
+    "tab_bar.background": "#252526",
+    "terminal.background": "#1d1f20",
+    "toolbar.background": "#1d1f20",
+    "status_bar.background": "#333333",
+    "editor.gutter.background": "#1d1f20"
   }
 }
