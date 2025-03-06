@@ -38,6 +38,11 @@
             "font_style": null,
             "font_weight": null
           },
+          "constant.builtin": {
+            "color": "#f7ffb6",
+            "font_style": null,
+            "font_weight": null
+          },
           "enum": {
             "color": "#c8c5ff",
             "font_style": null,
@@ -144,7 +149,6 @@
             "font_weight": null
           },
           "property": {
-            // "color": "#c5c8c6",
             "color": "#c8c5ff",
             "font_style": null,
             "font_weight": null
