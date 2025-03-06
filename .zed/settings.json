@@ -14,9 +14,9 @@
   },
   "features": {
     "copilot": false,
-    "inline_completion_provider": "none"
+    "edit_prediction_provider": "none"
   },
-  "theme": "Fleet Dark", // from Fleet Themes
+  "theme": "Estafette Dark",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -26,7 +26,7 @@
   "tab_bar": {
     "show_nav_history_buttons": false
   },
-  "buffer_font_size": 14.0,
+  "buffer_font_size": 14,
   "preferred_line_length": 80,
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Pragmata Pro",
@@ -78,36 +78,5 @@
       "enabled": false
     }
   },
-  "experimental.theme_overrides": {
-    "text": "#fafafa",
-    "editor.background": "#1d1f20",
-    "panel.background": "#252526",
-    "tab.active_background": "#1d1f20",
-    "tab.inactive_background": "#2d2d2d",
-    "title_bar.background": "#333333",
-    "tab_bar.background": "#252526",
-    "terminal.background": "#1d1f20",
-    "toolbar.background": "#1d1f20",
-    "status_bar.background": "#333333",
-    "editor.gutter.background": "#1d1f20",
-    "editor.active_line.background": "#3366ff11",
-    "players": [{ "cursor": "#fafafa" }],
-    "syntax": {
-      "operator": { "color": "#8ECBFE" },
-      "type": { "color": "#F8FFB6" },
-      "boolean": { "color": "#99CC89" },
-      "attribute": { "color": "#C7C5FF" },
-      "string": { "color": "#A8F13E" },
-      "variable": { "color": "#C7C5FF" },
-      "property": { "color": "#C7C5FF" },
-      "constant": { "color": "#C7C5FF" },
-      "function": { "color": "#DBD2A7" },
-      "function.definition": {
-        "color": "#DBD2A7",
-        "font_style": "normal",
-        "font_weight": 600
-      },
-      "keyword": { "color": "#8ECBFE", "font_style": "italic" }
-    }
-  }
+  "scroll_sensitivity": 1.75
 }
