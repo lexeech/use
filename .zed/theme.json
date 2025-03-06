@@ -18,6 +18,11 @@
             "font_style": null,
             "font_weight": null
           },
+          "undefined": {
+            "color": "#99cc8a",
+            "font_style": null,
+            "font_weight": null
+          },
           "comment": {
             "color": "#737c7c",
             "font_style": null,
@@ -139,8 +144,8 @@
             "font_weight": null
           },
           "property": {
-            "color": "#c5c8c6",
-            // "color": "#c8c5ff",
+            // "color": "#c5c8c6",
+            "color": "#c8c5ff",
             "font_style": null,
             "font_weight": null
           },
@@ -190,7 +195,7 @@
             "font_weight": null
           },
           "type.builtin": {
-            "color": null,
+            "color": "#f7ffb6",
             "font_style": null,
             "font_weight": null
           },
