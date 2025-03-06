@@ -25,7 +25,7 @@
           },
           "comment": {
             "color": "#737c7c",
-            "font_style": null,
+            "font_style": "italic",
             "font_weight": null
           },
           "comment.doc": {
