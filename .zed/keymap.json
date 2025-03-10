@@ -4,8 +4,8 @@
     "bindings": {
       "tab": "menu::SelectNext",
       "down": "menu::SelectNext",
-      "shift-tab": "menu::SelectPrev",
-      "up": "menu::SelectPrev",
+      "shift-tab": "menu::SelectPrevious",
+      "up": "menu::SelectPrevious",
       "enter": "menu::Confirm",
       "cmd-enter": "menu::SecondaryConfirm",
       "escape": "menu::Cancel",
@@ -22,7 +22,7 @@
       "ctrl-d": "editor::Delete",
       "delete": "editor::Delete",
       "tab": "editor::Tab",
-      "shift-tab": "editor::TabPrev",
+      "shift-tab": "editor::Backtab",
       "cmd-x": "editor::Cut",
       "cmd-c": "editor::Copy",
       "cmd-v": "editor::Paste",
@@ -73,19 +73,19 @@
     }
   },
   {
-    "context": "Editor && mode == full && inline_completion",
+    "context": "Editor && mode == full && edit_prediction",
     "use_key_equivalents": true,
     "bindings": {
-      "alt-tab": "editor::NextInlineCompletion",
-      "alt-shift-tab": "editor::PreviousInlineCompletion",
-      "ctrl-cmd-right": "editor::AcceptPartialInlineCompletion"
+      "alt-tab": "editor::NextEditPrediction",
+      "alt-shift-tab": "editor::PreviousEditPrediction",
+      "ctrl-cmd-right": "editor::AcceptPartialEditPrediction"
     }
   },
   {
-    "context": "Editor && !inline_completion",
+    "context": "Editor && !edit_prediction",
     "use_key_equivalents": true,
     "bindings": {
-      "alt-tab": "editor::ShowInlineCompletion"
+      "alt-tab": "editor::ShowEditPrediction"
     }
   },
   {
@@ -237,7 +237,6 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "cmd-j": "editor::JoinLines",
       "alt-backspace": "editor::DeleteToPreviousSubwordStart"
     }
   },
@@ -258,10 +257,10 @@
     }
   },
   {
-    "context": "Editor && inline_completion && !showing_completions",
+    "context": "Editor && edit_prediction && !showing_completions",
     "use_key_equivalents": true,
     "bindings": {
-      "tab": "editor::AcceptInlineCompletion"
+      "tab": "editor::AcceptEditPrediction"
     }
   },
   {
@@ -275,7 +274,7 @@
     "context": "Editor && (showing_code_actions || showing_completions)",
     "use_key_equivalents": true,
     "bindings": {
-      "up": "editor::ContextMenuPrev",
+      "up": "editor::ContextMenuPrevious",
       "down": "editor::ContextMenuNext"
     }
   },
@@ -298,7 +297,7 @@
       "right": "outline_panel::ExpandSelectedEntry",
       "space": "outline_panel::Open",
       "shift-down": "menu::SelectNext",
-      "shift-up": "menu::SelectPrev",
+      "shift-up": "menu::SelectPrevious",
       "alt-enter": "editor::OpenExcerpts",
       "cmd-alt-enter": "editor::OpenExcerptsSplit"
     }
