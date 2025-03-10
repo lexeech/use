@@ -290,7 +290,19 @@
         "hint.border": "#033768",
         "warning": "#fab247",
         "warning.background": "#583e19",
-        "warning.border": "#583e19"
+        "warning.border": "#583e19",
+        "modified": "#055cad",
+        "modified.background": "#055cad50",
+        "ignored": "#333",
+        "deleted": "#ab2323",
+        "created": "#2e9e76",
+        "conflict.border": "#fab247",
+        "conflict.background": "#fab24750",
+        "created.border": "#2e9e76",
+        "created.background": "#2e9e7650",
+        "deleted.background": "#ab232350",
+        "deleted.border": "#ab2323",
+        "modified.border": "#055cad"
       }
     }
   ],
