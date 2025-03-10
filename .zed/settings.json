@@ -78,5 +78,20 @@
       "enabled": false
     }
   },
-  "scroll_sensitivity": 1.75
+  "scroll_sensitivity": 1.75,
+  "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    }
+  },
+  "inlay_hints": {
+    "enabled": false
+  }
 }
