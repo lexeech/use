@@ -241,6 +241,11 @@
             "background": "#33332f"
           }
         ],
+        "scrollbar.thumb.border": "#333333",
+        "scrollbar_thumb.background": "#333333",
+        "scrollbar.track.border": "#353736",
+        "scrollbar.thumb.hover_background": "#555555",
+        "scrollbar.track.background": "",
         "panel.background": "#252526",
         "border": "transparent",
         "title_bar.background": "#333333",
@@ -276,13 +281,16 @@
         "element.disabled": null,
         "tab.active_foreground": null,
         "ghost_element.active": null,
-        "error": null,
-        "error.background": null,
-        "error.border": null,
-        "hint": null,
-        "hint.background": null,
         "predictive": null,
-        "warning": null
+        "error": "#e42f2f",
+        "error.background": "#671515",
+        "error.border": "#671515",
+        "hint": "#077be7",
+        "hint.background": "#033768",
+        "hint.border": "#033768",
+        "warning": "#fab247",
+        "warning.background": "#583e19",
+        "warning.border": "#583e19"
       }
     }
   ],
