@@ -237,15 +237,17 @@
         "players": [
           {
             "cursor": "#fafafa",
-            "selection": "#33332f",
-            "background": "#33332f"
+            "background": "#898989",
+            "selection": "#89898950"
           }
         ],
-        "scrollbar.thumb.border": "#333333",
-        "scrollbar_thumb.background": "#333333",
+
+        "scrollbar.thumb.border": "#55555555",
+        "scrollbar_thumb.background": "#55555599",
         "scrollbar.track.border": "#353736",
-        "scrollbar.thumb.hover_background": "#555555",
+        "scrollbar.thumb.hover_background": "",
         "scrollbar.track.background": "",
+
         "panel.background": "#252526",
         "border": "transparent",
         "title_bar.background": "#333333",
