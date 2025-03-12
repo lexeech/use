@@ -260,7 +260,7 @@
         "editor.line_number": "#858585",
         "editor.gutter.background": "#1d1f20",
         "editor.active_line.background": "#00000000",
-        "editor.document_highlight.read_background": "#ffffff10",
+        "editor.document_highlight.read_background": "#ffffff20",
         "editor.subheader.background": null,
         "terminal.background": "#1d1f20",
         "text": "#c5c8c6",
