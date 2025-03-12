@@ -216,6 +216,7 @@
     "bindings": {
       // Change the default action on `menu::Confirm` by setting the parameter
       // "alt-cmd-o": ["projects::OpenRecent", { "create_new_window": true }],
+      "cmd-shift-c": "workspace::CopyRelativePath",
       "cmd-s": "workspace::Save",
       "cmd-k s": "workspace::SaveWithoutFormat",
       "cmd-b": "workspace::ToggleLeftDock",
