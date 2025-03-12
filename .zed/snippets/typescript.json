@@ -1,0 +1,12 @@
+{
+  "Log to the console": {
+    "prefix": "ll",
+    "body": ["console.log($1);"],
+    "description": "Log to the console"
+  },
+  "Log to the console a string": {
+    "prefix": "lll",
+    "body": ["console.log('$1');"],
+    "description": "Log to the console a string"
+  }
+}
