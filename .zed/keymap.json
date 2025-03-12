@@ -349,10 +349,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-<": [
-        "task::Spawn",
-        { "task_name": "lazygit", "reveal_target": "center" }
-      ]
+      "cmd-<": ["task::Spawn", { "task_name": "🔥", "reveal_target": "center" }]
     }
   },
   {
