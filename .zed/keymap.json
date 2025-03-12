@@ -360,5 +360,20 @@
     "bindings": {
       "cmd-,": "editor::ToggleGitBlameInline"
     }
+  },
+  {
+    "context": "Terminal",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-c": "terminal::Copy",
+      "cmd-v": "terminal::Paste",
+      // Some nice conveniences
+      "cmd-backspace": ["terminal::SendText", "\u0015"],
+      "cmd-right": ["terminal::SendText", "\u0005"],
+      "cmd-left": ["terminal::SendText", "\u0001"],
+      // Terminal.app compatibility
+      "alt-left": ["terminal::SendText", "\u001bb"],
+      "alt-right": ["terminal::SendText", "\u001bf"]
+    }
   }
 ]
