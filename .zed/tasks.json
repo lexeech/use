@@ -1,6 +1,6 @@
 [
   {
-    "label": "start lazygit",
+    "label": "lazygit",
     "command": "lazygit",
     "hide": "on_success",
     "use_new_terminal": true,
