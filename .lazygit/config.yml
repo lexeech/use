@@ -38,12 +38,13 @@ gui:
       '*': '#878EC0' # Muted lavender for author names, consistent with soft themes
 
 os:
-    open: 'code-insiders {{filename}}'
-    edit: 'code-insiders {{filename}}'
-    editAtLine: 'code-insiders --line={{line}} {{filename}}'
-    editAtLineAndWait: 'code-insiders --block --line={{line}} {{filename}}'
+    open: 'zed {{filename}}'
+    edit: 'zed {{filename}}'
+    editAtLine: 'zed --line={{line}} {{filename}}'
+    editAtLineAndWait: 'zed --block --line={{line}} {{filename}}'
     editInTerminal: false
-    openDirInEditor: 'code-insiders {{dir}}'
+    openDirInEditor: 'zed {{dir}}'
+    openLink: open -n "$(echo {{link}} | sed 's/%2F/\//g')"
 
 keybinding:
   status:
