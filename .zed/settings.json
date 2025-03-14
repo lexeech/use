@@ -1,4 +1,7 @@
 {
+  "cursor_shape": "block",
+  "cursor_blink": false,
+  "multi_cursor_modifier": "cmd_or_ctrl",
   "use_smartcase_search": true,
   "selection_highlight_debounce": 250,
   "lsp_highlight_debounce": 250,
