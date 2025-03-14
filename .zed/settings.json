@@ -1,5 +1,10 @@
 {
+  "use_smartcase_search": true,
+  "selection_highlight_debounce": 250,
+  "lsp_highlight_debounce": 250,
+  "hover_popover_delay": 500,
   "base_keymap": "None",
+  "restore_on_startup": "none",
   "preview_tabs": {
     "enabled": false
   },
@@ -91,6 +96,11 @@
     "TypeScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
+      }
+    },
+    "SCSS": {
+      "Emmet": {
+        "CSS": true
       }
     }
   },
