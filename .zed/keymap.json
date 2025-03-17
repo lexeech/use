@@ -207,7 +207,8 @@
       "cmd-6": ["pane::ActivateItem", 6],
       "cmd-7": ["pane::ActivateItem", 7],
       "cmd-8": ["pane::ActivateItem", 8],
-      "cmd-9": ["pane::ActivateItem", 9]
+      "cmd-9": ["pane::ActivateItem", 9],
+      "cmd-shift-n": "pane::TogglePinTab"
     }
   },
   {
