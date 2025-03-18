@@ -208,6 +208,8 @@
       "cmd-7": ["pane::ActivateItem", 7],
       "cmd-8": ["pane::ActivateItem", 8],
       "cmd-9": ["pane::ActivateItem", 9],
+      "cmd-{": "pane::SwapItemLeft",
+      "cmd-}": "pane::SwapItemRight",
       "cmd-shift-n": "pane::TogglePinTab"
     }
   },
