@@ -33,22 +33,22 @@
       "down": "editor::MoveDown",
       "left": "editor::MoveLeft",
       "right": "editor::MoveRight",
+      "ctrl-left": "editor::MoveToPreviousSubwordStart",
+      "ctrl-right": "editor::MoveToNextSubwordEnd",
+      "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
+      "ctrl-shift-right": "editor::SelectToNextSubwordEnd",
       "alt-left": "editor::MoveToPreviousWordStart",
       "alt-right": "editor::MoveToNextWordEnd",
       "cmd-left": "editor::MoveToBeginningOfLine",
       "cmd-right": "editor::MoveToEndOfLine",
-      "ctrl-up": ["editor::MovePageUp", { "center_cursor": true }],
-      "ctrl-down": ["editor::MovePageDown", { "center_cursor": true }],
       "shift-up": "editor::SelectUp",
       "shift-down": "editor::SelectDown",
       "shift-left": "editor::SelectLeft",
       "shift-right": "editor::SelectRight",
-      "alt-shift-left": "editor::SelectToPreviousWordStart", // cursorWordLeftSelect
-      "alt-shift-right": "editor::SelectToNextWordEnd", // cursorWordRightSelect
+      "alt-shift-left": "editor::SelectToPreviousWordStart",
+      "alt-shift-right": "editor::SelectToNextWordEnd",
       "ctrl-shift-up": "editor::SelectToStartOfParagraph",
       "ctrl-shift-down": "editor::SelectToEndOfParagraph",
-      // "cmd-shift-up": "editor::SelectToBeginning",
-      // "cmd-shift-down": "editor::SelectToEnd",
       "cmd-a": "editor::SelectAll",
       "cmd-shift-k": "editor::Format",
       "cmd-shift-l": "editor::FormatSelections",
@@ -179,8 +179,6 @@
       "cmd-up": "editor::MoveLineUp",
       "cmd-down": "editor::MoveLineDown",
       "cmd-shift-d": "editor::DuplicateLineDown",
-      "ctrl-shift-right": "editor::SelectLargerSyntaxNode", // Expand Selection
-      "ctrl-shift-left": "editor::SelectSmallerSyntaxNode", // Shrink Selection
       "cmd-\\": ["editor::ToggleComments", { "advance_downwards": false }],
       "cmd-/": "editor::ShowCompletions",
       "cmd-shift-v": "markdown::OpenPreview",
@@ -217,8 +215,6 @@
     "context": "Workspace",
     "use_key_equivalents": true,
     "bindings": {
-      // Change the default action on `menu::Confirm` by setting the parameter
-      // "alt-cmd-o": ["projects::OpenRecent", { "create_new_window": true }],
       "cmd-shift-c": "workspace::CopyRelativePath",
       "cmd-s": "workspace::Save",
       "cmd-k s": "workspace::SaveWithoutFormat",
@@ -238,7 +234,6 @@
       "cmd-t": "workspace::NewFile"
     }
   },
-  // Bindings from Sublime Text
   {
     "context": "Editor",
     "use_key_equivalents": true,
@@ -270,7 +265,7 @@
     }
   },
   {
-    "context": "Editor && showing_code_actions", // TODO
+    "context": "Editor && showing_code_actions",
     "use_key_equivalents": true,
     "bindings": {
       "enter": "editor::ConfirmCodeAction"
@@ -369,11 +364,9 @@
     "bindings": {
       "cmd-c": "terminal::Copy",
       "cmd-v": "terminal::Paste",
-      // Some nice conveniences
       "cmd-backspace": ["terminal::SendText", "\u0015"],
       "cmd-right": ["terminal::SendText", "\u0005"],
       "cmd-left": ["terminal::SendText", "\u0001"],
-      // Terminal.app compatibility
       "alt-left": ["terminal::SendText", "\u001bb"],
       "alt-right": ["terminal::SendText", "\u001bf"]
     }
