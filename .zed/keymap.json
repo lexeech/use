@@ -33,6 +33,7 @@
       "down": "editor::MoveDown",
       "left": "editor::MoveLeft",
       "right": "editor::MoveRight",
+      "ctrl-backspace": "editor::DeleteToPreviousSubwordStart",
       "ctrl-left": "editor::MoveToPreviousSubwordStart",
       "ctrl-right": "editor::MoveToNextSubwordEnd",
       "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
