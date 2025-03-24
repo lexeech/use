@@ -165,7 +165,8 @@
     "use_key_equivalents": true,
     "bindings": {
       "cmd-w": "pane::CloseActiveItem",
-      "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }]
+      "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }],
+      "cmd-shift-m": "pane::JoinIntoNext"
     }
   },
   // Bindings from VS Code
@@ -328,13 +329,6 @@
       "tab": "picker::ConfirmCompletion",
       "alt-enter": ["picker::ConfirmInput", { "secondary": false }],
       "cmd-alt-enter": ["picker::ConfirmInput", { "secondary": true }]
-    }
-  },
-  {
-    "context": "FileFinder",
-    "use_key_equivalents": true,
-    "bindings": {
-      "cmd": "file_finder::ToggleMenu"
     }
   },
   {
