@@ -61,7 +61,7 @@
           "function.definition": {
             "color": "#dbd2a7",
             "font_style": "normal",
-            "font_weight": 600
+            "font_weight": null
           },
           "string": {
             "color": "#a8f13e",
@@ -224,7 +224,7 @@
             "font_weight": null
           },
           "hint": {
-            "color": null,
+            "color": "#737c7c",
             "font_style": null,
             "font_weight": null
           },
