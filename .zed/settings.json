@@ -1,5 +1,4 @@
 {
-  "wait_for": 1,
   "cursor_shape": "block",
   "cursor_blink": false,
   "multi_cursor_modifier": "alt",
@@ -131,5 +130,8 @@
   },
   "inlay_hints": {
     "enabled": false
+  },
+  "experimental.theme_overrides": {
+    "hint": "#737c7c"
   }
 }
