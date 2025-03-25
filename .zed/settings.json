@@ -93,6 +93,10 @@
   },
   "scroll_sensitivity": 1.75,
   "languages": {
+    "Python": {
+      "format_on_save": "on",
+      "language_servers": ["pyright", "ruff"]
+    },
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
@@ -106,6 +110,22 @@
     "SCSS": {
       "Emmet": {
         "CSS": true
+      }
+    }
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "configuration": "ruff.toml"
+        }
+      }
+    },
+    "pyright": {
+      "settings": {
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
       }
     }
   },
