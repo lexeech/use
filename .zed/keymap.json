@@ -240,7 +240,7 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "alt-backspace": "editor::DeleteToPreviousSubwordStart"
+      "alt-backspace": "editor::DeleteToPreviousWordStart"
     }
   },
   // Bindings that should be unified with bindings for more general actions
