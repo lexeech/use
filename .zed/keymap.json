@@ -166,8 +166,7 @@
     "use_key_equivalents": true,
     "bindings": {
       "cmd-w": "pane::CloseActiveItem",
-      "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }],
-      "cmd-shift-m": "pane::JoinIntoNext"
+      "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }]
     }
   },
   // Bindings from VS Code
@@ -180,6 +179,8 @@
       "cmd-q": "editor::DeleteLine",
       "cmd-up": "editor::MoveLineUp",
       "cmd-down": "editor::MoveLineDown",
+      "alt-up": "editor::MovePageUp",
+      "alt-down": "editor::MovePageDown",
       "cmd-shift-d": "editor::DuplicateLineDown",
       "cmd-\\": ["editor::ToggleComments", { "advance_downwards": false }],
       "cmd-/": "editor::ShowCompletions",
@@ -240,7 +241,7 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "alt-backspace": "editor::DeleteToPreviousWordStart"
+      "alt-backspace": "editor::DeleteToPreviousSubwordStart"
     }
   },
   // Bindings that should be unified with bindings for more general actions
@@ -339,8 +340,6 @@
       "escape": "menu::Cancel"
     }
   },
-
-  // Very custom
   {
     "context": "Workspace",
     "bindings": {
