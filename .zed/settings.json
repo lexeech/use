@@ -77,8 +77,10 @@
   "remove_trailing_whitespace_on_save": true,
   "when_closing_with_no_tabs": "keep_window_open",
   "gutter": {
+    "line_numbers": true,
     "runnables": false,
-    "code_actions": false
+    "code_actions": false,
+    "folds": false
   },
   "soft_wrap": "editor_width",
   "wrap_guides": [125, 136],
