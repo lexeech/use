@@ -169,7 +169,6 @@
       "alt-cmd-t": ["pane::CloseInactiveItems", { "close_pinned": false }]
     }
   },
-  // Bindings from VS Code
   {
     "context": "Editor",
     "use_key_equivalents": true,
@@ -179,8 +178,8 @@
       "cmd-q": "editor::DeleteLine",
       "cmd-up": "editor::MoveLineUp",
       "cmd-down": "editor::MoveLineDown",
-      "alt-up": "editor::MovePageUp",
-      "alt-down": "editor::MovePageDown",
+      "pageup": "editor::MovePageUp",
+      "pagedown": "editor::MovePageDown",
       "cmd-shift-d": "editor::DuplicateLineDown",
       "cmd-\\": ["editor::ToggleComments", { "advance_downwards": false }],
       "cmd-/": "editor::ShowCompletions",
