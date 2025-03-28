@@ -35,7 +35,6 @@
     "show_nav_history_buttons": false
   },
   "buffer_font_size": 14,
-  "preferred_line_length": 80,
   "buffer_line_height": "comfortable",
   "buffer_font_family": "Pragmata Pro",
   "toolbar": {
@@ -80,13 +79,17 @@
     "line_numbers": true,
     "runnables": false,
     "code_actions": false,
-    "folds": false
+    "folds": false,
+    "breakpoints": false
   },
   "soft_wrap": "editor_width",
   "wrap_guides": [125, 136],
   "git": {
+    "hunk_style": "staged_hollow",
+    "gutter_debounce": 250,
     "inline_blame": {
-      "enabled": false
+      "enabled": false,
+      "show_commit_summary": true
     }
   },
   "git_panel": {
