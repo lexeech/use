@@ -86,7 +86,7 @@
   "wrap_guides": [125, 136],
   "git": {
     "hunk_style": "staged_hollow",
-    "gutter_debounce": 250,
+    "gutter_debounce": 500,
     "inline_blame": {
       "enabled": false,
       "show_commit_summary": true
@@ -97,10 +97,6 @@
   },
   "scroll_sensitivity": 1.75,
   "languages": {
-    "Python": {
-      "format_on_save": "on",
-      "language_servers": ["pyright", "ruff"]
-    },
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
@@ -115,6 +111,17 @@
       "Emmet": {
         "CSS": true
       }
+    },
+    "Python": {
+      "format_on_save": "on",
+      "language_servers": ["pyright", "ruff"],
+      "formatter": [
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
     }
   },
   "lsp": {
