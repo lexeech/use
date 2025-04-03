@@ -48,6 +48,8 @@
       "shift-right": "editor::SelectRight",
       "alt-shift-left": "editor::SelectToPreviousWordStart",
       "alt-shift-right": "editor::SelectToNextWordEnd",
+      "alt-shift-up": "editor::SelectUp",
+      "alt-shift-down": "editor::SelectDown",
       "ctrl-shift-up": "editor::SelectToStartOfParagraph",
       "ctrl-shift-down": "editor::SelectToEndOfParagraph",
       "cmd-a": "editor::SelectAll",
