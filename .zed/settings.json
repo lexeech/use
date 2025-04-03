@@ -1,4 +1,5 @@
 {
+  "go_to_definition_fallback": "none",
   "cursor_shape": "block",
   "cursor_blink": false,
   "multi_cursor_modifier": "alt",
