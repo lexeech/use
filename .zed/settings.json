@@ -1,4 +1,7 @@
 {
+  "unstable.ui_density": "compact",
+  "use_system_prompts": false,
+  "show_user_picture": false,
   "hide_mouse": "on_typing_and_movement",
   "go_to_definition_fallback": "none",
   "cursor_shape": "block",
@@ -9,7 +12,7 @@
   "lsp_highlight_debounce": 250,
   "hover_popover_delay": 500,
   "base_keymap": "None",
-  "restore_on_startup": "none",
+  "restore_on_startup": "last_session",
   "preview_tabs": {
     "enabled": false
   },
@@ -19,7 +22,8 @@
     "file_icons": false,
     "folder_icons": false,
     "indent_size": 10,
-    "entry_spacing": "comfortable",
+    "entry_spacing": "standard",
+    // "entry_spacing": "comfortable",
     "button": false
   },
   "features": {
