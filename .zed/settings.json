@@ -1,4 +1,5 @@
 {
+  "hide_mouse": "on_typing_and_movement",
   "go_to_definition_fallback": "none",
   "cursor_shape": "block",
   "cursor_blink": false,
