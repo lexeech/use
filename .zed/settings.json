@@ -24,7 +24,7 @@
     "indent_size": 10,
     "entry_spacing": "standard",
     // "entry_spacing": "comfortable",
-    "button": false
+    "button": true
   },
   "features": {
     "copilot": false,
@@ -99,7 +99,7 @@
     }
   },
   "git_panel": {
-    "button": false
+    "button": true
   },
   "scroll_sensitivity": 1.75,
   "languages": {
