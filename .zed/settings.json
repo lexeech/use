@@ -1,4 +1,5 @@
 {
+  "bottom_dock_layout": "right_aligned",
   "unstable.ui_density": "compact",
   "use_system_prompts": false,
   "show_user_picture": false,
@@ -23,7 +24,6 @@
     "folder_icons": false,
     "indent_size": 10,
     "entry_spacing": "standard",
-    // "entry_spacing": "comfortable",
     "button": true
   },
   "features": {
@@ -69,7 +69,7 @@
     "button": false,
     "font_size": 12
   },
-  "assistant": {
+  "agent": {
     "version": "1",
     "enabled": false,
     "button": false
