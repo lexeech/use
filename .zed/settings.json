@@ -94,7 +94,10 @@
     "breakpoints": false
   },
   "soft_wrap": "editor_width",
-  "wrap_guides": [125, 136],
+  "wrap_guides": [
+    125,
+    136
+  ],
   "git": {
     "hunk_style": "staged_hollow",
     "gutter_debounce": 500,
@@ -110,7 +113,8 @@
     "show_branch_icon": false,
     "show_user_picture": false
   },
-  "scroll_sensitivity": 1.75,
+  "scroll_sensitivity": 2,
+  "formatter": "language_server",
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
@@ -129,7 +133,10 @@
     },
     "Python": {
       "format_on_save": "on",
-      "language_servers": ["pyright", "ruff"],
+      "language_servers": [
+        "pyright",
+        "ruff"
+      ],
       "formatter": [
         {
           "language_server": {
