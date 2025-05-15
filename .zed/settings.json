@@ -40,6 +40,13 @@
     "diagnostics": false,
     "metrics": false
   },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": false
+    },
+    "cargo": null
+  },
   "vim_mode": false,
   "ui_font_size": 15,
   "tab_bar": {
