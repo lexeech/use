@@ -1,5 +1,6 @@
 {
-  "bottom_dock_layout": "right_aligned",
+  "auto_update": true,
+  "bottom_dock_layout": "left_aligned",
   "unstable.ui_density": "compact",
   "use_system_prompts": false,
   "show_user_picture": false,
@@ -25,6 +26,10 @@
     "indent_size": 10,
     "entry_spacing": "standard",
     "button": true
+  },
+  "file_finder": {
+    "skip_focus_for_active_in_search": false,
+    "modal_max_width": "large"
   },
   "features": {
     "copilot": false,
@@ -100,6 +105,10 @@
   },
   "git_panel": {
     "button": true
+  },
+  "title_bar": {
+    "show_branch_icon": false,
+    "show_user_picture": false
   },
   "scroll_sensitivity": 1.75,
   "languages": {
