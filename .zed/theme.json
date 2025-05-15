@@ -241,13 +241,11 @@
             "selection": "#89898950"
           }
         ],
-
         "scrollbar.thumb.border": "#55555555",
         "scrollbar_thumb.background": "#55555599",
+        "scrollbar.thumb.hover_background": "#77777799",
         "scrollbar.track.border": "#353736",
-        "scrollbar.thumb.hover_background": "",
         "scrollbar.track.background": "",
-
         "panel.background": "#252526",
         "border": "transparent",
         "title_bar.background": "#333333",
@@ -293,23 +291,18 @@
         "warning": "#fab247",
         "warning.background": "#583e19",
         "warning.border": "#583e19",
-
         "ignored": "#8c8c8c",
         "ignored.border": "#8c8c8c",
         "ignored.background": "#8c8c8c30",
-
         "modified": "#e2c08d",
         "modified.border": "#055cad",
         "modified.background": "#055cad50",
-
         "conflict": "#f88070",
         "conflict.border": "#f88070",
         "conflict.background": "#f8807050",
-
         "created": "#73c991",
         "created.border": "#73c991",
         "created.background": "#73c99150",
-
         "deleted": "#ab2323",
         "deleted.border": "#ab2323",
         "deleted.background": "#ab232350"
