@@ -113,6 +113,10 @@
     "show_branch_icon": false,
     "show_user_picture": false
   },
+  "scrollbar": {
+    "show": "always",
+    "cursors": false
+  },
   "scroll_sensitivity": 2,
   "formatter": "language_server",
   "languages": {
@@ -166,6 +170,6 @@
     "enabled": false
   },
   "experimental.theme_overrides": {
-    "hint": "#737c7c"
+    "hint": "#737c7c",
   }
 }
