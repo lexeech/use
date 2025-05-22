@@ -18,7 +18,7 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "cmd-C": "editor::Cancel",
+      "cmd-alt-c": "editor::Cancel",
       "cmd-d": "editor::GoToDefinition",
       "cmd-h": "editor::Hover",
       "cmd-?": "editor::ToggleCodeActions",
