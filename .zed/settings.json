@@ -18,6 +18,12 @@
   "preview_tabs": {
     "enabled": false
   },
+  "minimap": {
+    "show": "never"
+  },
+  "search": {
+    "button": false
+  },
   "project_panel": {
     "default_width": 480,
     "dock": "left",
@@ -25,7 +31,7 @@
     "folder_icons": false,
     "indent_size": 10,
     "entry_spacing": "standard",
-    "button": true
+    "button": false
   },
   "file_finder": {
     "skip_focus_for_active_in_search": false,
@@ -111,7 +117,7 @@
     }
   },
   "git_panel": {
-    "button": true
+    "button": false
   },
   "title_bar": {
     "show_branch_icon": false,
