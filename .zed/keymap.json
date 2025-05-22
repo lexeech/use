@@ -18,7 +18,7 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
-      "cmd-alt-c": "editor::Cancel",
+      "cmd-e": "editor::Cancel",
       "cmd-d": "editor::GoToDefinition",
       "cmd-h": "editor::Hover",
       "cmd-?": "editor::ToggleCodeActions",
@@ -300,8 +300,7 @@
     "bindings": {
       "alt-enter": "editor::OpenExcerpts",
       "shift-enter": "editor::ExpandExcerpts",
-      "cmd-shift-e": "pane::RevealInProjectPanel",
-      "cmd-e": "outline_panel::UnfoldDirectory"
+      "cmd-shift-e": "pane::RevealInProjectPanel"
     }
   },
   {
