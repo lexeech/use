@@ -18,6 +18,7 @@
     "context": "Editor",
     "use_key_equivalents": true,
     "bindings": {
+      "cmd-shift-w": "editor::SelectLargerSyntaxNode",
       "cmd-e": "editor::Cancel",
       "cmd-d": "editor::GoToDefinition",
       "cmd-h": "editor::Hover",
