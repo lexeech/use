@@ -1,5 +1,7 @@
 {
   "auto_update": true,
+  "inline_code_actions": false,
+  "extend_comment_on_newline": false,
   "bottom_dock_layout": "left_aligned",
   "unstable.ui_density": "compact",
   "use_system_prompts": false,
