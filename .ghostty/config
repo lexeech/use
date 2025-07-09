@@ -44,3 +44,5 @@ cursor-invert-fg-bg = true
 selection-invert-fg-bg = true
 
 mouse-scroll-multiplier = 1.7
+
+confirm-close-surface = always
