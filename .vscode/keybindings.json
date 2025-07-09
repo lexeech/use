@@ -282,6 +282,18 @@
   {
     "key": "shift+cmd+.",
     "command": "editor.action.triggerSuggest"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "editor.action.addSelectionToNextFindMatch"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-quitControl.keybindings.closeWindow"
   }
   // END CUSTOM --------------------------------------
 ]
