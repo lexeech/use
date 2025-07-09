@@ -1,14 +1,39 @@
-font-family = Pragmata Pro
+font-family = PragmataProMonoLiga Nerd Font
+adjust-cell-height = 4
+adjust-cursor-height = 4
+
 theme = GruvboxLight
+
 cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
-window-padding-x = 8
-window-padding-y = 8
+
+window-padding-x = 10
+window-padding-y = 10
 window-height = 58
 window-width = 215
 window-position-x = 32
 window-position-y = 390
+window-save-state = always
+
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
 quick-terminal-position = center
 quick-terminal-animation-duration = 0.085
+
+mouse-hide-while-typing = true
+
+background-opacity = 0.95
+background-blur = true
+
+macos-titlebar-style = tabs
+title = " "
+
+macos-icon = custom-style
+macos-icon-frame = aluminum
+macos-icon-ghost-color = #000000
+macos-icon-screen-color = #000000
+
+clipboard-trim-trailing-spaces = true
+
+cursor-invert-fg-bg = true
+selection-invert-fg-bg = true
