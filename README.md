@@ -1,6 +1,4 @@
-# use
-
-Things I use
+# Things I Use
 
 This repository contains configuration files and directories for tools and environments that I use regularly. Below is a brief overview of the contents:
 
