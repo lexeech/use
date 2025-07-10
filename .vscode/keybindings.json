@@ -324,5 +324,17 @@
     "key": "shift+cmd+i",
     "command": "-workbench.action.chat.openAgent",
     "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+  },
+    {
+    "key": "shift+cmd+w",
+    "command": "editor.action.addSelectionToNextFindMatch"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-quitControl.keybindings.closeWindow"
   }
 ]
