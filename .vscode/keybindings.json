@@ -284,16 +284,45 @@
     "command": "editor.action.triggerSuggest"
   },
   {
-    "key": "shift+cmd+w",
-    "command": "editor.action.addSelectionToNextFindMatch"
+    "key": "shift+cmd+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
   },
   {
-    "key": "shift+cmd+w",
-    "command": "-workbench.action.closeWindow"
+    "key": "alt+t",
+    "command": "workbench.action.chat.newChat",
+    "when": "chatEditingParticipantRegistered && chatIsEnabled && inChat"
   },
   {
-    "key": "shift+cmd+w",
-    "command": "-quitControl.keybindings.closeWindow"
+    "key": "ctrl+l",
+    "command": "-workbench.action.chat.newChat",
+    "when": "chatEditingParticipantRegistered && chatIsEnabled && inChat"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.chat.open",
+    "when": "!chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "-workbench.action.chat.open",
+    "when": "!chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.action.openQuickChat"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-workbench.action.chat.openAgent",
+    "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
   }
-  // END CUSTOM --------------------------------------
 ]
