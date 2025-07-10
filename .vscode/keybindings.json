@@ -337,4 +337,5 @@
     "key": "shift+cmd+w",
     "command": "-quitControl.keybindings.closeWindow"
   }
+  // END CUSTOM ------------------------------------
 ]
