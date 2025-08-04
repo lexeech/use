@@ -2,7 +2,6 @@ font-family = PragmataProMonoLiga Nerd Font
 font-family-bold = PragmataPro Mono Liga Bold Nerd Font Complete
 font-family-italic = PragmataPro Mono Liga Italic Nerd Font Complete
 font-family-bold-italic = PragmataPro Mono Liga Bold Italic Nerd Font Complete
-font-feature = -dlig
 adjust-cell-height = 4
 adjust-cursor-height = 4
 
@@ -17,11 +16,11 @@ window-padding-y = 10
 window-height = 58
 window-width = 215
 window-position-x = 32
-window-position-y = 390
+window-position-y = 340
 window-save-state = always
 
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
-quick-terminal-position = center
+quick-terminal-position = right
 quick-terminal-animation-duration = 0.085
 
 mouse-hide-while-typing = true
