@@ -9,6 +9,9 @@ theme = CobaltNext
 
 cursor-style = block
 cursor-style-blink = false
+cursor-color = #fdffac
+cursor-text = #333333
+
 shell-integration-features = no-cursor
 
 window-padding-x = 10
@@ -40,7 +43,6 @@ clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
-cursor-invert-fg-bg = true
 selection-invert-fg-bg = true
 
 mouse-scroll-multiplier = 1.7
