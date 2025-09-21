@@ -241,7 +241,8 @@
     "bindings": {
       "cmd-shift-c": "workspace::CopyRelativePath",
       "cmd-s": "workspace::Save",
-      "cmd-b": "workspace::ToggleLeftDock",
+      "cmd-shift-b": "workspace::ToggleLeftDock",
+      "cmd-b": "workspace::ToggleRightDock",
       "cmd-shift-f": "pane::DeploySearch",
       "cmd-shift-t": "pane::ReopenClosedItem",
       "cmd-n": "project_symbols::Toggle",
@@ -368,7 +369,7 @@
       "cmd->": [
         "task::Spawn",
         {
-          "task_name": "🔥",
+          "task_name": "✨",
           "reveal_target": "center"
         }
       ]
