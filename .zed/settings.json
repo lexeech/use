@@ -5,14 +5,12 @@
   "bottom_dock_layout": "left_aligned",
   "unstable.ui_density": "compact",
   "use_system_prompts": false,
-  "show_user_picture": false,
   "hide_mouse": "on_typing_and_movement",
   "go_to_definition_fallback": "none",
   "cursor_shape": "block",
   "cursor_blink": false,
   "multi_cursor_modifier": "alt",
   "use_smartcase_search": true,
-  "selection_highlight_debounce": 250,
   "lsp_highlight_debounce": 250,
   "hover_popover_delay": 500,
   "base_keymap": "None",
@@ -28,20 +26,17 @@
   },
   "project_panel": {
     "default_width": 480,
-    "dock": "left",
+    "dock": "right",
     "file_icons": false,
     "folder_icons": false,
     "indent_size": 10,
     "entry_spacing": "standard",
-    "button": false
+    "button": false,
+    "sticky_scroll": false
   },
   "file_finder": {
     "skip_focus_for_active_in_search": false,
     "modal_max_width": "large"
-  },
-  "features": {
-    "copilot": false,
-    "edit_prediction_provider": "none"
   },
   "theme": "Estafette Dark",
   "telemetry": {
@@ -52,17 +47,18 @@
     "include_warnings": true,
     "inline": {
       "enabled": false
-    },
-    "cargo": null
+    }
   },
   "vim_mode": false,
   "ui_font_size": 15,
   "tab_bar": {
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
-  "buffer_font_family": "Pragmata Pro",
+  // "buffer_font_family": "Pragmata Pro",
+  "buffer_font_family": "LigaPragmataProMonoNerdFontPropo",
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false,
@@ -77,34 +73,27 @@
     "show_close_button": "hover"
   },
   "collaboration_panel": {
-    "enabled": false,
     "button": false
   },
   "outline_panel": {
-    "enabled": false,
     "button": false
   },
   "terminal": {
-    "enabled": false,
     "button": false,
-    "font_size": 12
-  },
-  "agent": {
-    "version": "1",
-    "enabled": false,
-    "button": false
+    "font_size": 13,
+    "line_height": "standard",
+    "font_family": "LigaPragmataProMonoNerdFontPropo"
   },
   "notification_panel": {
-    "enabled": false,
     "button": false
   },
   "confirm_quit": true,
   "remove_trailing_whitespace_on_save": true,
   "when_closing_with_no_tabs": "keep_window_open",
   "gutter": {
+    "min_line_number_digits": 5,
     "line_numbers": true,
     "runnables": false,
-    "code_actions": false,
     "folds": false,
     "breakpoints": false
   },
@@ -117,6 +106,9 @@
       "enabled": false,
       "show_commit_summary": true
     }
+  },
+  "debugger": {
+    "button": false
   },
   "git_panel": {
     "button": false
@@ -131,6 +123,8 @@
   },
   "scroll_sensitivity": 2,
   "formatter": "auto",
+
+  // Languages & LSPs - Start
   "languages": {
     "JavaScript": {
       "code_actions_on_format": {
@@ -140,11 +134,6 @@
     "TypeScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": true
-      }
-    },
-    "SCSS": {
-      "Emmet": {
-        "CSS": true
       }
     },
     "Python": {
@@ -173,12 +162,79 @@
           "pythonPath": ".venv/bin/python"
         }
       }
+    },
+    "vtsls": {
+      "settings": {
+        "javascript": {
+          "inlayHints": {
+            "parameterNames": {
+              "enabled": "all",
+              "suppressWhenArgumentMatchesName": false
+            },
+            "parameterTypes": {
+              "enabled": false
+            },
+            "variableTypes": {
+              "enabled": false,
+              "suppressWhenTypeMatchesName": true
+            },
+            "propertyDeclarationTypes": {
+              "enabled": false
+            },
+            "functionLikeReturnTypes": {
+              "enabled": false
+            },
+            "enumMemberValues": {
+              "enabled": true
+            }
+          }
+        },
+        "typescript": {
+          "inlayHints": {
+            "parameterNames": {
+              "enabled": "all",
+              "suppressWhenArgumentMatchesName": false
+            },
+            "parameterTypes": {
+              "enabled": true
+            },
+            "variableTypes": {
+              "enabled": true,
+              "suppressWhenTypeMatchesName": true
+            },
+            "propertyDeclarationTypes": {
+              "enabled": true
+            },
+            "functionLikeReturnTypes": {
+              "enabled": true
+            },
+            "enumMemberValues": {
+              "enabled": true
+            }
+          }
+        }
+      }
     }
+  },
+  // Languages & LSPs - End
+
+  "experimental.theme_overrides": {
+    "hint": "#737c7c",
+    "predictive": "#737c7c",
+    "players": [{ "cursor": "#dbd2a7" }]
+  },
+
+  // AI Stuff - Start
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "agent": {
+    "enabled": false,
+    "button": false
   },
   "inlay_hints": {
     "enabled": false
   },
-  "experimental.theme_overrides": {
-    "hint": "#737c7c"
-  }
+  "show_edit_predictions": false
+  // AI Stuff - End
 }
