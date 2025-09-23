@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# File content search with preview for tmux
+# Uses ripgrep and fzf for searching within file contents
+
+set -e
+
+# Default directory is current working directory
+SEARCH_DIR="${1:-$(pwd)}"
+
+# Search for content in files using ripgrep and fzf
+rg --color=always --line-number --no-heading --smart-case "${@:2}" "$SEARCH_DIR" 2>/dev/null | \
+fzf --ansi \
+    --delimiter : \
+    --preview 'bat --color=always --highlight-line {2} {1}' \
+    --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+    --bind 'enter:execute(code-insiders {1}:{2})' \
+    --bind 'ctrl-o:execute(code-insiders {1}:{2})' \
+    --header 'Enter/Ctrl-O to Open'

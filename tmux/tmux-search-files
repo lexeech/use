@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# File search with preview for tmux
+# Uses find/fd and fzf for searching file names
+
+set -e
+
+# Default directory is current working directory
+SEARCH_DIR="${1:-$(pwd)}"
+
+# Check if fd is available, otherwise use find
+if command -v fd >/dev/null 2>&1; then
+    # Use fd if available (faster and respects .gitignore)
+    fd --type f --hidden --follow --exclude .git . "$SEARCH_DIR" | \
+    fzf --preview 'bat --color=always --style=header,grid --line-range :300 {}' \
+        --preview-window 'up,60%,border-bottom' \
+        --bind 'enter:execute(code-insiders {})' \
+        --bind 'ctrl-o:execute(code-insiders {})' \
+        --header 'Enter/Ctrl-O to Open'
+else
+    # Fallback to find
+    find "$SEARCH_DIR" -type f \( ! -path "*/.*" -o -name ".*" \) -not -path "*/.git/*" | \
+    fzf --preview 'bat --color=always --style=header,grid --line-range :300 {}' \
+        --preview-window 'up,60%,border-bottom' \
+        --bind 'enter:execute(code-insiders {})' \
+        --bind 'ctrl-o:execute(code-insiders {})' \
+        --header 'Enter/Ctrl-O to Open'
+fi
