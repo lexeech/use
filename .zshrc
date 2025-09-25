@@ -20,4 +20,6 @@ alias dshell="pyenv exec poetry run python ./manage.py shell"
 alias lzg="lazygit"
 alias lzd="lazydocker'
 
+alias tmux="tmux a || tmux"
+
 source $ZSH/oh-my-zsh.sh
