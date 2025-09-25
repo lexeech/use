@@ -5,5 +5,13 @@
     "hide": "on_success",
     "use_new_terminal": false,
     "allow_concurrent_runs": false
+  },
+  {
+    "label": "📝 Opening notes ..",
+    "command": "zed",
+    "args": ["./_.md"],
+    "hide": "on_success",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false
   }
 ]
