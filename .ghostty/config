@@ -1,29 +1,26 @@
-font-family = PragmataProMonoLiga Nerd Font
-font-family-bold = PragmataPro Mono Liga Bold Nerd Font Complete
-font-family-italic = PragmataPro Mono Liga Italic Nerd Font Complete
-font-family-bold-italic = PragmataPro Mono Liga Bold Italic Nerd Font Complete
-font-feature = +calt, +liga, -dlig
+font-family = LigaPragmataProMonoNerdFontPropo
 
 adjust-cell-height = 4
 adjust-cursor-height = 4
 
-theme = CobaltNext
+theme = Gruvbox Dark
 
 cursor-style = block
 cursor-style-blink = false
-cursor-color = #fdffac
-cursor-text = #333333
+cursor-color = #dbd2a7
+cursor-text = #111111
 
 shell-integration-features = no-cursor
 
 window-padding-x = 10
 window-padding-y = 10
-window-height = 38
-window-width = 215
+window-height = 50
+window-width = 200
 window-position-x = 32
 window-position-y = 440
 window-save-state = always
 
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
 quick-terminal-position = right
 quick-terminal-animation-duration = 0.085
 
@@ -33,6 +30,7 @@ background-opacity = 0.99
 background-blur = true
 
 macos-titlebar-style = tabs
+title = " "
 
 macos-icon = custom-style
 macos-icon-frame = aluminum
@@ -47,5 +45,9 @@ selection-invert-fg-bg = true
 
 mouse-scroll-multiplier = 1.7
 
-keybind = global:ctrl+grave_accent=toggle_quick_terminal
 keybind = shift+enter=text:\n
+
+#macos
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+macos-option-as-alt = true
