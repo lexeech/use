@@ -1,5 +1,19 @@
 [
   {
+    "context": "!TabSwitcher",
+    "bindings": {
+      "ctrl-tab": "tab_switcher::ToggleAll"
+    }
+  },
+  {
+    "context": "TabSwitcher",
+    "bindings": {
+      "x": "tab_switcher::CloseSelectedItem",
+      "k": "menu::SelectPrevious",
+      "j": "menu::SelectNext"
+    }
+  },
+  {
     "use_key_equivalents": true,
     "bindings": {
       "tab": "menu::SelectNext",
@@ -370,6 +384,13 @@
         "task::Spawn",
         {
           "task_name": "✨",
+          "reveal_target": "center"
+        }
+      ],
+      "alt-n": [
+        "task::Spawn",
+        {
+          "task_name": "📝 Opening notes ..",
           "reveal_target": "center"
         }
       ]
