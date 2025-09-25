@@ -1,74 +1,78 @@
 git:
-    paging:
-        colorArg: always
-        pager: diff-so-fancy
+  paging:
+    colorArg: always
+    pager: diff-so-fancy
+  disableForcePushing: true
 confirmOnQuit: true
 gui:
-    wrapLinesInStagingView: true
-    mouseEvents: false
-    statusPanelView: 'allBranchesLog'
-    showPanelJumps: false
-    commandLogSize: 14
-    showRandomTip: false
-    expandFocusedSidePanel: true
-    showFileTree: false
-
-    theme:
-      activeBorderColor:
-        - '#268BD2' # Soft blue accent
-        - bold
-      inactiveBorderColor:
-        - '#858585' # Dark gray for inactive elements
-      optionsTextColor:
-        - '#858585' # Muted blue
-      selectedLineBgColor:
-        - '#1d2846' # Very dark blue for selected line background
-      cherryPickedCommitBgColor:
-        - '#2C2C2C' # Slightly lighter dark gray for cherry-picked commits
-      cherryPickedCommitFgColor:
-        - '#A8CC7C' # Soft lime green for foreground, consistent with highlights
-      unstagedChangesColor:
-        - '#E394DC' # Pink for unstaged changes, keeping subtle vibrance
-      defaultFgColor:
-        - '#D1D1D1' # Light gray for default text color
-      searchingActiveBorderColor:
-        - '#F8AB17' # Yellow for search highlights (contrasting active borders)
-
-    authorColors:
-      '*': '#878EC0' # Muted lavender for author names, consistent with soft themes
-
+  wrapLinesInStagingView: true
+  mouseEvents: false
+  statusPanelView: "allBranchesLog"
+  showPanelJumps: false
+  commandLogSize: 14
+  showRandomTip: false
+  expandFocusedSidePanel: true
+  showFileTree: false
+  theme:
+    activeBorderColor:
+      - "#fabd2f" # Gruvbox bright yellow
+      - bold
+    inactiveBorderColor:
+      - "#928374" # Gruvbox gray
+    optionsTextColor:
+      - "#928374" # Gruvbox gray
+    selectedLineBgColor:
+      - "#3c3836" # Gruvbox dark1
+    selectedRangeBgColor:
+      - "#504945" # Gruvbox dark2
+    cherryPickedCommitBgColor:
+      - "#3c3836" # Gruvbox dark1
+    cherryPickedCommitFgColor:
+      - "#b8bb26" # Gruvbox bright green
+    unstagedChangesColor:
+      - "#fb4934" # Gruvbox bright red
+    defaultFgColor:
+      - "#ebdbb2" # Gruvbox foreground
+    searchingActiveBorderColor:
+      - "#fe8019" # Gruvbox bright orange
+    stagedChangesColor:
+      - "#b8bb26" # Gruvbox bright green
+    mergeConflictCurrentBgColor:
+      - "#d79921" # Gruvbox neutral yellow
+    mergeConflictIncomingBgColor:
+      - "#458588" # Gruvbox neutral blue
+  authorColors:
+    "*": "#d3869b" # Gruvbox bright purple
 os:
-    open: '$EDITOR {{filename}}'
-    edit: '$EDITOR {{filename}}'
-    editAtLine: '$EDITOR --line={{line}} {{filename}}'
-    editAtLineAndWait: '$EDITOR --block --line={{line}} {{filename}}'
-    editInTerminal: false
-    openDirInEditor: '$EDITOR {{dir}}'
-    openLink: open -n "$(echo {{link}} | sed 's/%2F/\//g')"
-
+  open: "$EDITOR {{filename}}"
+  edit: "$EDITOR {{filename}}"
+  editAtLine: "$EDITOR --line={{line}} {{filename}}"
+  editAtLineAndWait: "$EDITOR --block --line={{line}} {{filename}}"
+  editInTerminal: false
+  openDirInEditor: "$EDITOR {{dir}}"
+  openLink: open -n "$(echo {{link}} | sed 's/%2F/\//g')"
 keybinding:
   status:
-    recentRepos: ''
+    recentRepos: ""
   universal:
-    quitWithoutChangingDirectory: ''
-    prevBlock-alt: ''
-    nextBlock-alt: ''
-    scrollUpMain-alt1: ''
-    scrollDownMain-alt1: ''
-    scrollUpMain-alt2: ''
-    scrollDownMain-alt2: ''
+    quitWithoutChangingDirectory: ""
+    prevBlock-alt: ""
+    nextBlock-alt: ""
+    scrollUpMain-alt1: ""
+    scrollDownMain-alt1: ""
+    scrollUpMain-alt2: ""
+    scrollDownMain-alt2: ""
   submodules:
-    init: ''
-    update: ''
-    bulkMenu: ''
+    init: ""
+    update: ""
+    bulkMenu: ""
   worktrees:
-    viewWorktreeOptions: ''
+    viewWorktreeOptions: ""
   files:
-    commitChangesWithEditor: ''
-    openMergeTool: ''
+    commitChangesWithEditor: ""
+    openMergeTool: ""
   branches:
-    mergeIntoCurrentBranch: ''
-
+    mergeIntoCurrentBranch: ""
 customCommands:
   - key: "C"
     prompts:
@@ -77,7 +81,7 @@ customCommands:
         initialValue: ""
     command: git commit -m "{{index .PromptResponses 0}}" --no-verify
     context: "files"
-    subprocess: true
+    output: terminal
   - key: "M"
     context: "localBranches"
     prompts:
@@ -85,4 +89,4 @@ customCommands:
         title: "Merge branch into current branch"
         initialValue: ""
     command: git merge origin/{{index .PromptResponses 0}}
-    subprocess: true
+    output: terminal
