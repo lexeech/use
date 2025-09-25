@@ -38,7 +38,7 @@
     "skip_focus_for_active_in_search": false,
     "modal_max_width": "large"
   },
-  "theme": "Estafette Dark",
+  "theme": "Gruvbox Dark Hard",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -52,12 +52,12 @@
   "vim_mode": false,
   "ui_font_size": 15,
   "tab_bar": {
+    "show": true,
     "show_nav_history_buttons": false,
     "show_tab_bar_buttons": false
   },
   "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
-  // "buffer_font_family": "Pragmata Pro",
   "buffer_font_family": "LigaPragmataProMonoNerdFontPropo",
   "toolbar": {
     "breadcrumbs": false,
@@ -82,7 +82,9 @@
     "button": false,
     "font_size": 13,
     "line_height": "standard",
-    "font_family": "LigaPragmataProMonoNerdFontPropo"
+    "font_family": "LigaPragmataProMonoNerdFontPropo",
+    "cursor_shape": "block",
+    "option_as_meta": true
   },
   "notification_panel": {
     "button": false
@@ -97,8 +99,10 @@
     "folds": false,
     "breakpoints": false
   },
-  "soft_wrap": "editor_width",
-  "wrap_guides": [125, 136],
+  // "soft_wrap": "editor_width",
+  "soft_wrap": "preferred_line_length",
+  "preferred_line_length": 125,
+  "wrap_guides": [136],
   "git": {
     "hunk_style": "staged_hollow",
     "gutter_debounce": 500,
@@ -115,7 +119,8 @@
   },
   "title_bar": {
     "show_branch_icon": false,
-    "show_user_picture": false
+    "show_user_picture": false,
+    "show_branch_name": false
   },
   "scrollbar": {
     "show": "always",
@@ -165,30 +170,62 @@
     },
     "vtsls": {
       "settings": {
-        "javascript": {
-          "inlayHints": {
-            "parameterNames": {
-              "enabled": "all",
-              "suppressWhenArgumentMatchesName": false
-            },
-            "parameterTypes": {
-              "enabled": false
-            },
-            "variableTypes": {
-              "enabled": false,
-              "suppressWhenTypeMatchesName": true
-            },
-            "propertyDeclarationTypes": {
-              "enabled": false
-            },
-            "functionLikeReturnTypes": {
-              "enabled": false
-            },
-            "enumMemberValues": {
-              "enabled": true
-            }
-          }
-        },
+        // "javascript": {
+        //   "suggestionActions": {
+        //     "enabled": false
+        //   },
+        //   "validate": {
+        //     "enable": false
+        //   },
+        //   "inlayHints": {
+        //     "parameterNames": {
+        //       "enabled": false
+        //     },
+        //     "parameterTypes": {
+        //       "enabled": false
+        //     },
+        //     "variableTypes": {
+        //       "enabled": false
+        //     },
+        //     "propertyDeclarationTypes": {
+        //       "enabled": false
+        //     },
+        //     "functionLikeReturnTypes": {
+        //       "enabled": false
+        //     },
+        //     "enumMemberValues": {
+        //       "enabled": false
+        //     }
+        //   }
+        // },
+        // "javascriptreact": {
+        //   "suggestionActions": {
+        //     "enabled": false
+        //   },
+        //   "validate": {
+        //     "enable": false
+        //   },
+        //   "inlayHints": {
+        //     "parameterNames": {
+        //       "enabled": false
+        //     },
+        //     "parameterTypes": {
+        //       "enabled": false
+        //     },
+        //     "variableTypes": {
+        //       "enabled": false
+        //     },
+        //     "propertyDeclarationTypes": {
+        //       "enabled": false
+        //     },
+        //     "functionLikeReturnTypes": {
+        //       "enabled": false
+        //     },
+        //     "enumMemberValues": {
+        //       "enabled": false
+        //     }
+        //   }
+        // },
         "typescript": {
           "inlayHints": {
             "parameterNames": {
