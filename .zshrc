@@ -1,4 +1,4 @@
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# See e
 ZSH_THEME="terminalparty"
 
 plugins=(
@@ -6,6 +6,7 @@ plugins=(
         zsh-shift-select
         you-should-use
         zsh-syntax-highlighting
+        zsh-autosuggestions
         zsh-256color
 )
 
@@ -21,5 +22,13 @@ alias lzg="lazygit"
 alias lzd="lazydocker'
 
 alias tmux="tmux a || tmux"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+export EDITOR="zed"
+export VISUAL="zed"
 
 source $ZSH/oh-my-zsh.sh
