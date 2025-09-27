@@ -66,11 +66,10 @@
   },
   "tabs": {
     "show_diagnostics": "errors",
-    "close_position": "right",
     "file_icons": false,
     "git_status": true,
     "activate_on_close": null,
-    "show_close_button": "hover"
+    "show_close_button": "hidden"
   },
   "collaboration_panel": {
     "button": false
@@ -99,7 +98,6 @@
     "folds": false,
     "breakpoints": false
   },
-  // "soft_wrap": "editor_width",
   "soft_wrap": "preferred_line_length",
   "preferred_line_length": 125,
   "wrap_guides": [136],
