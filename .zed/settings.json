@@ -66,6 +66,7 @@
   },
   "tabs": {
     "show_diagnostics": "errors",
+    "close_position": "right",
     "file_icons": false,
     "git_status": true,
     "activate_on_close": null,
@@ -98,6 +99,7 @@
     "folds": false,
     "breakpoints": false
   },
+  // "soft_wrap": "editor_width",
   "soft_wrap": "preferred_line_length",
   "preferred_line_length": 125,
   "wrap_guides": [136],
@@ -116,9 +118,12 @@
     "button": false
   },
   "title_bar": {
+    "show_project_items": false,
+    "show_sign_in": false,
     "show_branch_icon": false,
     "show_user_picture": false,
-    "show_branch_name": false
+    "show_branch_name": false,
+    "show_onboarding_banner": false
   },
   "scrollbar": {
     "show": "always",
@@ -254,6 +259,7 @@
   // Languages & LSPs - End
 
   "experimental.theme_overrides": {
+    "warning": "#6e6954",
     "hint": "#737c7c",
     "predictive": "#737c7c",
     "players": [{ "cursor": "#dbd2a7" }]
