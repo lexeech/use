@@ -5,9 +5,9 @@ plugins=(
         git
         zsh-shift-select
         you-should-use
-        zsh-syntax-highlighting
         zsh-autosuggestions
         zsh-256color
+        zsh-syntax-highlighting
 )
 
 alias nano="echo 'Use alternative - micro"
@@ -19,7 +19,7 @@ alias dmigrate="pyenv exec poetry run python ./manage.py migrate"
 alias dshell="pyenv exec poetry run python ./manage.py shell"
 
 alias lzg="lazygit"
-alias lzd="lazydocker'
+alias lzd="lazydocker"
 
 alias tmux="tmux a || tmux"
 
@@ -31,4 +31,5 @@ eval "$(pyenv init - zsh)"
 export EDITOR="zed"
 export VISUAL="zed"
 
-source $ZSH/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
+source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
