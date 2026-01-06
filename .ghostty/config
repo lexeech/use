@@ -1,10 +1,12 @@
+command = ~/ghostty.command.sh
+
 font-family = LigaPragmataProMonoNerdFontPropo
-font-size = 13
+font-size = 12
 
 adjust-cell-height = 4
 adjust-cursor-height = 4
 
-theme = Gruvbox Dark
+theme = gruvbox-dark
 
 cursor-style = block
 cursor-style-blink = false
@@ -15,10 +17,10 @@ shell-integration-features = no-cursor
 
 window-padding-x = 10
 window-padding-y = 10
-window-height = 50
-window-width = 200
+window-height = 40
+window-width = 125
 window-position-x = 32
-window-position-y = 440
+window-position-y = 100
 window-save-state = always
 
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
@@ -42,13 +44,11 @@ clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
-selection-invert-fg-bg = true
-
 mouse-scroll-multiplier = 1.7
 
 keybind = shift+enter=text:\n
+keybind = ctrl+v=paste_from_clipboard
 
-#macos
-keybind = alt+left=unbind
-keybind = alt+right=unbind
-macos-option-as-alt = true
+copy-on-select = false
+selection-invert-fg-bg = true
+app-notifications = no-clipboard-copy
