@@ -260,9 +260,10 @@
       "cmd-shift-f": "pane::DeploySearch",
       "cmd-shift-t": "pane::ReopenClosedItem",
       "cmd-n": "project_symbols::Toggle",
-      "cmd-p": "file_finder::Toggle",
       "cmd-shift-p": "command_palette::Toggle",
-      "cmd-shift-x": "zed::Extensions"
+      "cmd-shift-x": "zed::Extensions",
+      "cmd-p": "file_finder::Toggle",
+      "alt-p": ["task::Spawn", { "task_name": "Television File Finder", "reveal_target": "center" }]
     }
   },
   {
@@ -413,6 +414,21 @@
       "cmd-left": ["terminal::SendText", "\u0001"],
       "alt-left": ["terminal::SendText", "\u001bb"],
       "alt-right": ["terminal::SendText", "\u001bf"]
+    }
+  },
+  {
+    "bindings": {
+      "alt-shift-b": "editor::ViewBookmarks"
+    }
+  },
+  {
+    "bindings": {
+      "alt-shift-c": "editor::CopyPath"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-shift-t": "text_finder::Toggle"
     }
   }
 ]
